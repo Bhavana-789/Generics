@@ -61,7 +61,6 @@ namespace GenericsAssignment
                 return 0;
             }
         }
-
         public static string FindMax(string first, string second, string third)
         {
             //to check if first number is maximum or not

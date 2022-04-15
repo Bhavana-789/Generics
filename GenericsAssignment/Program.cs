@@ -7,7 +7,7 @@ namespace GenericsAssignment
         static void Main(string[] args)
         {
             Console.WriteLine("Welcome to Generics Program\n");
-            Console.WriteLine("1:FindMaximum\n2:FindMaxFloatValues\n3:FindMaxString");
+            Console.WriteLine("1:FindMaximum\n2:FindMaxFloatValues\n3:FindMaxString\n4:GenericFindMax");
             int option=Convert.ToInt32(Console.ReadLine());
             switch(option)
             {
@@ -23,7 +23,11 @@ namespace GenericsAssignment
                     string result2=FindMaximum.FindMax("car","bus","train");
                     Console.WriteLine(result2);
                     break;
-
+                case 4:
+                    new GenericMax<int>(20, 30, 40).TestMaximum();
+                    new GenericMax<float>(20.6f, 30.9f, 40.3f).TestMaximum();
+                    new GenericMax<string>("train","bus","car").TestMaximum();
+                    break;
 
             }
         }

@@ -44,5 +44,11 @@ namespace GenericsAssignment
             }
 
         }
+
+        public void TestMaximum()
+        {
+            T res = FindMax(first, second, third);
+            Console.WriteLine("max value is:"+res);
+        }
     }
 }
